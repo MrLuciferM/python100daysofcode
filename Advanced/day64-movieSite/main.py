@@ -6,7 +6,13 @@ from werkzeug.wrappers import response
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 import requests
-from private import *
+import os
+
+
+MOVIE_DB_SEARCH_URL = "https://api.themoviedb.org/3/search/movie"
+MOVIE_DB_INFO_URL = "https://api.themoviedb.org/3/movie"
+MOVIE_DB_IMAGE_URL = "https://image.tmdb.org/t/p/w500"
+MOVIE_DB_API_KEY = os.environ['MOVIE_DB_API_KEY']
 
 app = Flask(__name__)
 

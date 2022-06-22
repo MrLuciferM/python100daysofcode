@@ -1,6 +1,4 @@
-from enum import unique
 from flask import Flask, render_template, request, redirect, url_for
-import sqlite3
 from flask_sqlalchemy import SQLAlchemy
 
 # db = sqlite3.connect("books-collection.db")
